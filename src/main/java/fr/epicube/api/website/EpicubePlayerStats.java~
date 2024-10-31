@@ -1,0 +1,45 @@
+package fr.epicube.api.website;
+
+public class EpicubePlayerStats {
+    private String name;
+    private String rankName;
+    private long playedTime;
+    private int totalGame;
+
+    public EpicubePlayerStats(String name, String rankName, long playedTime, int totalGame) {
+        this.name = name;
+        this.rankName = rankName;
+        this.playedTime = playedTime;
+        this.totalGame = totalGame;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getTotalGame() {
+        return totalGame;
+    }
+
+    public long getPlayedTime() {
+        return playedTime;
+    }
+
+    public String getRankName() {
+        return rankName;
+    }
+
+    public void setTotalGame(int totalGame) {
+        this.totalGame = totalGame;
+    }
+
+    @Override
+    public String toString() {
+        return "EpicubePlayerStats{" +
+                "name='" + name + '\'' +
+                ", rankName='" + rankName + '\'' +
+                ", playedTime=" + playedTime +
+                ", totalGame=" + totalGame +
+                '}';
+    }
+}

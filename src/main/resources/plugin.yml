@@ -1,0 +1,4 @@
+name: Epicube-API
+version: '${project.version}'
+main: fr.epicube.api.Main
+authors: [Likaos, Chekaviah]
